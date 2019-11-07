@@ -1,8 +1,5 @@
 #!/bin/bash
 
-avr-gcc -g -Os -mmcu=atmega328p -c led.c
-avr-gcc -g -mmcu=atmega328p -o led.elf led.o
-avr-objcopy -j .text -j .data -O ihex led.elf led.hex
 
 avr-objcopy -O ihex -R .eeprom led.elf led.hex
 
