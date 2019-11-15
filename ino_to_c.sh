@@ -5,7 +5,7 @@ echo '#include'' "Arduino.h"'  > prueba
 cd my_blink
 touch main.c
 
-echo '#include <Arduino.h>' > main.c
+echo "#include <Arduino.h>" > my_blink.cpp
 
 cat my_blink.ino >> main.c
 
