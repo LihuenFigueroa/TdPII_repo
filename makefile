@@ -27,10 +27,10 @@ CPP_FLAGS = $(GENERAL_FLAGS) -fno-exceptions
 CC_FLAGS  = $(GENERAL_FLAGS)
 
 # location of include files
-INCLUDE_FILES = "-I$(ARDUINO_DIR)hardware/arduino/cores/arduino" "-I$(ARDUINO_DIR)hardware/arduino/variants/standard"
+INCLUDE_FILES = "-I$(ARDUINO_DIR)/hardware/arduino/cores/arduino" "-I$(ARDUINO_DIR)/hardware/arduino/variants/standard"
 
 # library sources
-LIBRARY_DIR = "$(ARDUINO_DIR)hardware/arduino/cores/arduino/"
+LIBRARY_DIR = "$(ARDUINO_DIR)/hardware/arduino/cores/arduino/"
 
 build:
 	
