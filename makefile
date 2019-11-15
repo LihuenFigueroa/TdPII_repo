@@ -5,7 +5,7 @@
 # Date: 18th March 2015
 
 # where you installed the Arduino app
-ARDUINO_DIR = /usr/share/
+ARDUINO_DIR = /usr/share/arduino
 
 # various programs
 CC = "$(ARDUINO_DIR)hardware/tools/avr/bin/avr-gcc"
