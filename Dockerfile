@@ -7,7 +7,7 @@ RUN mkdir -p /var/log/jenkins; \
     chown -R jenkins:jenkins /var/log/jenkins; \
     chown -R jenkins:jenkins /var/cache/jenkins; \
     apt update; \
-    apt install binutils gcc-avr avr-libc uisp avrdude flex byacc bison -y
+    apt install binutils gcc-avr avr-libc uisp avrdude flex byacc bison -y arduino-core
 USER jenkins
 
 ENV JAVA_OPTS="-Xmx8192m"
