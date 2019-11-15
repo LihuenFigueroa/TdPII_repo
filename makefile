@@ -55,7 +55,7 @@ build:
 	$(CPP) $(CPP_FLAGS) $(INCLUDE_FILES) $(LIBRARY_DIR)USBCore.cpp -o USBCore.cpp.o
 	$(CPP) $(CPP_FLAGS) $(INCLUDE_FILES) $(LIBRARY_DIR)WMath.cpp -o WMath.cpp.o
 	$(CPP) $(CPP_FLAGS) $(INCLUDE_FILES) $(LIBRARY_DIR)WString.cpp -o WString.cpp.o
-	
+	rm -f core.a
 	$(AR) rcs core.a malloc.c.o
 	$(AR) rcs core.a realloc.c.o
 	$(AR) rcs core.a WInterrupts.c.o
