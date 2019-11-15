@@ -10,7 +10,7 @@ ARDUINO_DIR = /usr/share/arduino
 # various programs
 CC = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-gcc"
 CPP = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-g++"
-AR = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-ar"
+AR = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-gcc-ar"
 OBJ_COPY = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-objcopy"
 
 MAIN_SKETCH = my_blink/my_blink.cpp
@@ -55,7 +55,7 @@ build:
 	$(CPP) $(CPP_FLAGS) $(INCLUDE_FILES) $(LIBRARY_DIR)USBCore.cpp -o USBCore.cpp.o
 	$(CPP) $(CPP_FLAGS) $(INCLUDE_FILES) $(LIBRARY_DIR)WMath.cpp -o WMath.cpp.o
 	$(CPP) $(CPP_FLAGS) $(INCLUDE_FILES) $(LIBRARY_DIR)WString.cpp -o WString.cpp.o
-	rm core.a
+	rm -f core.a
 	$(AR) rcs core.a malloc.c.o
 	$(AR) rcs core.a realloc.c.o
 	$(AR) rcs core.a WInterrupts.c.o
