@@ -5,15 +5,15 @@
 # Date: 18th March 2015
 
 # where you installed the Arduino app
-ARDUINO_DIR = /usr/share/arduino/
+ARDUINO_DIR = /usr/share/arduino
 
 # various programs
-CC = "$(ARDUINO_DIR)hardware/tools/avr/bin/avr-gcc"
-CPP = "$(ARDUINO_DIR)hardware/tools/avr/bin/avr-g++"
-AR = "$(ARDUINO_DIR)hardware/tools/avr/bin/avr-ar"
-OBJ_COPY = "$(ARDUINO_DIR)hardware/tools/avr/bin/avr-objcopy"
+CC = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-gcc"
+CPP = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-g++"
+AR = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-ar"
+OBJ_COPY = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-objcopy"
 
-MAIN_SKETCH = my_blink.cpp
+MAIN_SKETCH = my_blink/my_blink.cpp
 
 # compile flags for g++ and gcc
 
