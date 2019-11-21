@@ -17,7 +17,9 @@ pipeline {
             }
         }
         stage('Export by FTP'){
-            //
+            steps{
+                //
+            }
         }
     }
 }
