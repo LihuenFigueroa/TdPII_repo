@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Export by FTP'){
             steps{
-                //
+                sh 'cd '
             }
         }
     }
