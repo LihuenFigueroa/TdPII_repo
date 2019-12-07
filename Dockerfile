@@ -1,6 +1,7 @@
 FROM jenkins/jenkins:latest
 LABEL maintainer="lihuenfigueroa@gmail.com"
 
+
 USER root
 RUN mkdir -p /var/log/jenkins; \
     mkdir -p /var/cache/jenkins; \
