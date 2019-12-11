@@ -31,7 +31,7 @@ idversion=$(echo $result | cut -d "," -f 2)
 
 # obtengo idprogram
 # obtengo idversion
-
+mkdir -p programs
 mkdir -p $idprogram
 cd $idprogram
 mkdir -p $idversion
