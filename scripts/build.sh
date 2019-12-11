@@ -37,5 +37,6 @@ mkdir -p $idprogram
 cd $idprogram
 mkdir -p $idversion
 cd ..
+cd ..
 mv $program_name/$program_name'.cpp.hex' programs/$idprogram/$idversion/1.hex 
 # hardcodeado porque solo es compatible con atmega328p
