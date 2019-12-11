@@ -13,7 +13,7 @@ CPP = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-g++"
 AR = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-gcc-ar"
 OBJ_COPY = "$(ARDUINO_DIR)/hardware/tools/avr/bin/avr-objcopy"
 
-MAIN_SKETCH = Blinky/Blinky.cpp
+MAIN_SKETCH = tumama/tumama.cpp
 
 # compile flags for g++ and gcc
 
