@@ -26,8 +26,8 @@ change_log=$(git log -1 | sed '5!d' | cut -d " " -f 5- | cut -d "#" -f 2)
 
 result=$(curl -v -H 'Content-Type: multipart/form-data' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,/;q=0.8' -d "version[changelog]=$change_log&version[program_name]=$program_name" -X POST http://tobyteam.computerengineering.me/versions)
 
-idprogram=echo $result | cut -d "," -f 1
-idversion=echo $result | cut -d "," -f 2
+idprogram=$(echo $result | cut -d "," -f 1)
+idversion=$(echo $result | cut -d "," -f 2)
 
 # obtengo idprogram
 # obtengo idversion
