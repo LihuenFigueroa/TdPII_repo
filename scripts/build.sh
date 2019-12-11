@@ -32,7 +32,9 @@ idversion=$(echo $result | cut -d "," -f 2)
 # obtengo idprogram
 # obtengo idversion
 
-mkdir -p $idprogram/$idversion
-
+mkdir -p $idprogram
+cd $idprogram
+mkdir -p $idversion
+cd ..
 mv $program_name/$program_name'.cpp.hex' programs/$idprogram/$idversion/1.hex 
 # hardcodeado porque solo es compatible con atmega328p
